@@ -1,0 +1,23 @@
+.main{
+  font-style: italic;
+  
+
+}
+
+.container{
+ text-align: center;
+}
+
+.tab{
+  background-color: black;
+  color: aliceblue;
+  text-decoration: solid;
+  text-align: center;
+  
+
+}
+
+.elem{
+  background-color: burlywood;
+  color: black;
+}

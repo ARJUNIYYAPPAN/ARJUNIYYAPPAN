@@ -1,0 +1,12 @@
+.main{
+    h1{
+        color: red;
+    }
+    label{
+        color: green($color: #000000);
+    }
+
+    button{
+        color: blue;
+    }
+}

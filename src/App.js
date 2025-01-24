@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Dashboard from './Dashboard';
+import Valid from "./Valid";
+import Login from "./Login";
+import Api from "./Api";
+import Counter from "./Counter";
+import Tasks from "./Tasks";
+import Apps from "./Apps";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+
+function App(){
+  return(
+    <div>
+      <Router>
+        <Routes>
+          <Route path='/Apps' element={<Apps/>}></Route>
+          <Route path='/' element={<Tasks/>}></Route>
+          <Route path='/dashboard' element={<Dashboard/>}></Route>
+          <Route path='/valid' element={<Valid/>}></Route>
+          <Route path='/api' element={<Api/>}></Route>
+          <Route path='/Counter' element={<Counter/>}></Route>
+        </Routes>
+      </Router>
     </div>
-  );
+  )
 }
 
 export default App;
